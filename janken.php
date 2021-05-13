@@ -25,5 +25,7 @@ if ($input == $enemy) {
     print "残念。。。負けてしまいました。もう一度チャレンジしましょう！";
     print '<a href="http://127.0.0.1:8080/lamp20/step3.html">戻る</a>';
 }
+print "<br>";
+print '<img src="assets/img/step3/jankenphp.png" class="img-fluid" alt="">';
 
 ?>

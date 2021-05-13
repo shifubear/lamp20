@@ -79,22 +79,22 @@
 
         <div class="section-title">
           <h2>STEP３</h2>
-          <p>HTMLとPHPを使えば色々な操作ができます。</p>
+          <p>HTMLとPHPを使えば色々な操作ができます。<br>
+          (以下のボタンを押すとそれぞれのphpコードが閲覧できます。ぜひ実際に押してみてください。)</p>
         </div>
         <div class="row">
           <div class="col-lg-4">
             <img src="assets/img/step3/messagehtml.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>inputを使ってできる操作</h3>
             <p class="fst-italic">
               <form method="POST" action="3submit.php">
-                <div>テキストボックス</div>
-                <div>文字を入力してください。</div>
+                <h3>テキストボックス</h3>
+                <div>文字を入力してください。</dev><br>
                 <input type="text"  name="message">
                 <input type="submit"　value="送信">
               </form>
-              テキストボックスを使えば文字の投稿や検索、文字の指定などの操作ができるようになります。
+              <br>テキストボックスを使えば文字の投稿や検索、文字の指定などの操作ができるようになります。
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <p class="fst-italic">
               <form method="POST" action="3submit.php">
-                <div>チェックボックスボタン</div>
+                <h3>チェックボックスボタン</h3>
                 <div>よく使うサイトを選んでください。</div>
                 <input type="checkbox" name="youtube">youtube
                 <input type="checkbox" name="twitter">twitter
@@ -126,7 +126,7 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
               <form method="POST" action="3submit.php">
-                <div>ラジオボタン</div>
+                <h3>ラジオボタン</h3>
                 <input type="radio" name="waza" value="10万ボルト">10万ボルド
                 <input type="radio" name="waza" value="アイアンテール">アイアンテール
                 <br>
@@ -140,6 +140,7 @@
           </div>
         </div>
           <br>
+          これらのボタン操作を学ぶと、下のような簡単なゲームが作れるようになります。
           <br>
           <div class="row">
             <div class="col-lg-4">
@@ -147,9 +148,9 @@
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content">
               <p class="fst-italic">
-                これらのボタン操作を学ぶと、下のような簡単なゲームが作れるようになります。
                 <form method="POST" action="janken.php">
-                    じゃんけん!!<br>
+                    <h3>じゃんけん!!</h3>
+                    <br>
                     ランダムで選択される相手に勝ってみてください！！<br>
                     <input type="radio" name="janken" value="グー"> グー
                     <input type="radio" name="janken" value="チョキ"> チョキ
@@ -160,21 +161,25 @@
             </div>
           </div>
           <br>
+          <p>
           とても簡単なゲームに見えますが、<br>
-          「ボタンの使い分け」「押されたボタンごとの反応」「コンピュータ側のランダム表示」「勝ち負けの処理」<br>
+          
+          「<span style="color:red">ボタンの使い分け</span>」「<span style="color:red">押されたボタンごとの反応</span>」「<span style="color:red">コンピュータ側のランダム表示</span>」「<span style="color:red">勝ち負けの処理</span>」
+          <br>
           等々の操作をしなければなりません。<br><br>
-          このゲームの場合、複数選択できるとゲームにならないのでラジオボタン。<br>
-          グーがチョキに勝つ。チョキがパーに勝つ。パーがグーに勝つ。のif文の設定。<br>
-          ランダムで候補の中から選択されるrandコマンド。<br>
-          利用者が勝ち負けあいこのどれに当てはまるかの処理わけ。<br>
+          このゲームの場合、複数選択できるとゲームにならないので<span style="color:blue">ラジオボタン</span>。<br>
+          グーがチョキに勝つ。チョキがパーに勝つ。パーがグーに勝つ。の<span style="color:blue">if文</span>の設定。<br>
+          ランダムで候補の中から選択される<span style="color:blue">randコマンド</span>。<br>
+          利用者が勝ち負けあいこのどれに当てはまるかの<span style="color:blue">処理わけ</span>。<br>
           以上の四つを設定しました。
+          </p>
 
           <br><br>
-          ここからさらに練習を重ね、簡易掲示板を作成しました。該当の名前を押すとそれぞれが作成した掲示板に飛べます。
-          <a href="http://aidnet-ikishou.kir.jp/M/keijiban.html">松尾しんや</a>
-          <a href="http://aidnet-ikishou.kir.jp/I/keijiban.html">市山ゆりな</a>
-          <a href="http://aidnet-ikishou.kir.jp/K/index.html">木下ほなみ</a>
-          <a href="http://aidnet-ikishou.kir.jp/Y/keijiban.html">山口ゆづき</a>
+          ここからさらに練習を重ね、４人それぞれが簡易掲示板を作成しました。該当の名前を押すとそれぞれが作成した掲示板に飛べます。<br>
+          <a href="http://aidnet-ikishou.kir.jp/M/keijiban.html">松尾しんや</a><br>
+          <a href="http://aidnet-ikishou.kir.jp/I/keijiban.html">市山ゆりな</a><br>
+          <a href="http://aidnet-ikishou.kir.jp/K/index.html">木下ほなみ</a><br>
+          <a href="http://aidnet-ikishou.kir.jp/Y/keijiban.html">山口ゆづき</a><br>
 
 
         </div>
